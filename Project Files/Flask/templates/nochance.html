@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Result • Flood Risk</title>
+  <style>
+    body{
+      margin:0; min-height:100vh;
+      display:grid; place-items:center;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial;
+      background: radial-gradient(900px 500px at 20% 10%, rgba(52,211,153,0.16), transparent 60%),
+                  linear-gradient(180deg, #0b1220, #0f1b2d);
+      color: rgba(255,255,255,0.92);
+      padding: 24px;
+    }
+    .card{
+      max-width: 720px; width:100%;
+      border-radius: 18px;
+      border: 1px solid rgba(255,255,255,0.14);
+      background: rgba(255,255,255,0.08);
+      box-shadow: 0 18px 60px rgba(0,0,0,0.55);
+      padding: 22px;
+    }
+    .tag{
+      display:inline-flex; gap:10px; align-items:center;
+      padding: 10px 14px;
+      border-radius: 999px;
+      border: 1px solid rgba(52,211,153,0.35);
+      background: rgba(52,211,153,0.12);
+      font-weight: 650;
+    }
+    .title{ margin:14px 0 8px; font-size: 28px; font-weight: 780; }
+    .sub{ margin:0; color: rgba(255,255,255,0.72); line-height:1.6; }
+    a{
+      display:inline-block; margin-top: 16px;
+      text-decoration:none;
+      padding: 12px 16px;
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,0.14);
+      background: rgba(255,255,255,0.06);
+      color: rgba(255,255,255,0.92);
+      font-weight:650;
+    }
+    a:hover{ border-color: rgba(255,255,255,0.22); transform: translateY(-1px); }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="tag">✅ Low Risk</div>
+    <h1 class="title">No Flood Chance</h1>
+    <p class="sub">
+      The model does not detect flood-like conditions for the entered values.
+      Keep monitoring weather updates for changes.
+    </p>
+    <a href="/">← Back to Predictor</a>
+  </div>
+</body>
+</html>
